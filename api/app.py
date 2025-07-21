@@ -3,7 +3,6 @@ from fastapi import FastAPI
 from langchain.prompts import ChatPromptTemplate
 from langserve import add_routes
 import uvicorn
-import os
 from dotenv import load_dotenv
 from langchain_ollama import OllamaLLM
 load_dotenv()
@@ -12,8 +11,7 @@ load_dotenv()
 app=FastAPI(
     title="Langchain Server",
     version="1.0",
-    decsription="A simple API Server"
-
+    description="A simple API Server"
 )
 
 #ollama llama2
